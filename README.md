@@ -43,14 +43,17 @@ HR-Attrition-Analytics
 │       employee_data.csv
 │       new_employee_data.csv
 │
+├───image
+│       logo.png
+│
 ├───model
 │       encoder.pkl
 │       trained_model.pkl
 │
+├───README.md
 ├───notebook.ipynb
 ├───notebook.py
 ├───prediction.py
-├───Readme.md
 ├───requirements.txt
 ├───yuriza-dashboard.png
 ├───yuriza-video.mp4
