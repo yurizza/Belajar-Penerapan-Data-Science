@@ -15,8 +15,7 @@ Pertanyaan ini dapat diuraikan menjadi beberapa sub-masalah yang lebih spesifik:
 1. Apa faktor-faktor utama yang menyebabkan tingginya tingkat pergantian karyawan di Jaya Jaya Maju?
 2. Bagaimana kepuasan kerja, keseimbangan kehidupan kerja, pengembangan karir, dan budaya organisasi saat ini mempengaruhi retensi karyawan di perusahaan?
 3. Strategi apa yang dapat diterapkan oleh manajemen untuk meningkatkan kepuasan dan retensi karyawan?
-4. Bagaimana dampak dari tingginya tingkat pergantian karyawan terhadap biaya rekrutmen dan pelatihan, serta produktivitas dan efisiensi operasional perusahaan?
-5. Apa saja best practice dalam manajemen sumber daya manusia yang dapat diadopsi oleh Jaya Jaya Maju untuk mengurangi attrition rate?
+4. Apa saja best practice dalam manajemen sumber daya manusia yang dapat diadopsi oleh Jaya Jaya Maju untuk mengurangi attrition rate?
 
 ## Lingkup Proyek
 
@@ -201,17 +200,31 @@ Dasbor tersebut memperlihatkan hubungan antara beberapa kolom dan tingkat atrisi
    Grafik ini membandingkan jumlah kerja lembur dengan tingkat pergantian. Pemahaman terhadap dampak kerja lembur terhadap kepuasan kerja dan keseimbangan kehidupan kerja karyawan dapat membantu dalam mengidentifikasi faktor-faktor yang menyebabkan tingkat attrisi yang tinggi.
 ## Kesimpulan
 
-1. Sepuluh kolom teratas yang memengaruhi atrisi adalah MonthlyIncome, Age, DistanceFromHome,  YearsInCurrentRole, NumCompaniesWorked, PercentSalaryHike, OverTime_Yes, TrainingTimesLastYear, EnvironmentSatisfaction, JobSatisfaction
-2. Model machine learning mencapai akurasi 84% menggunakan Random Forest.
-3. Lakukan evaluasi dengan bertanya mengapa karyawan mengundurkan diri.
-4. Usia muda, gaji rendah, pendidikan Sarjana, dan lembur cenderung menyebabkan atrisi.
-5. Kenaikan gaji persentase rendah dan jarak dekat (< 9km) juga cenderung menyebabkan atrisi.
+1. **Identifikasi Faktor Utama yang Mempengaruhi Tingkat Pergantian Karyawan:**
+   - Faktor-faktor seperti usia (Age), lama bekerja dalam peran saat ini (Years in Current Role), jumlah perusahaan tempat bekerja sebelumnya (Number of Companies Worked), jarak dari rumah ke tempat kerja (Distance from Home), kenaikan persentase gaji (Percent Salary Hike), serta lembur (Overtime) telah diidentifikasi sebagai faktor-faktor yang berpengaruh terhadap tingkat pergantian karyawan.
+
+2. **Model Prediksi:**
+   - Sebuah model prediksi telah berhasil dikembangkan menggunakan algoritma Random Forest dengan akurasi sebesar 84%. Model ini dapat memprediksi kemungkinan atrisi karyawan berdasarkan atribut-atribut yang telah diidentifikasi.
+
+3. **Business Dashboard:**
+   - Dashboard bisnis telah dibuat untuk memberikan visibilitas yang jelas terhadap kinerja perusahaan dan faktor-faktor yang mempengaruhi atrisi karyawan. Dashboard ini mencakup Key Performance Indicators (KPIs) seperti Total Karyawan, Rata-rata Usia, Tingkat Pergantian Karyawan, Pendapatan Bulanan Rata-rata, serta Kepuasan Lingkungan Kerja Rata-rata. Selain itu, dashboard juga mencakup visualisasi lain seperti Stacked Barchart untuk membandingkan Monthly Income vs Attrition, serta grafik lainnya untuk memperoleh pemahaman yang lebih dalam tentang hubungan antara faktor-faktor tersebut dengan tingkat atrisi.
+
+Dengan mengimplementasikan hasil-hasil ini, Jaya Jaya Maju dapat meningkatkan retensi karyawan, mengoptimalkan produktivitas, dan memperkuat stabilitas bisnisnya di masa depan.
 
 ## Rekomendasi Tindakan
 
-1. Mendekati karyawan dengan kemungkinan atrisi tinggi berdasarkan model ML.
-2. Meningkatkan gaji.
-3. Karyawan muda lebih suka mendapatkan penghargaan atas pencapaian.
-4. Lakukan evaluasi bulanan terhadap karyawan untuk memungkinkan mereka mengungkapkan kekhawatiran/kesulitan.
-5. Tingkatkan kenaikan gaji persentase.
-6. Hindari lembur; jika perlu, berikan kompensasi yang cukup.
+Dari uraian masalah yang telah disajikan, kita dapat merumuskan dari rumusan masalah sebagai berikut:
+
+1. **Strategi untuk Meningkatkan Kepuasan dan Retensi Karyawan:**
+   - Meningkatkan kepuasan kerja dan lingkungan kerja dengan mendengarkan dan merespons masukan karyawan, serta menciptakan budaya kerja yang inklusif dan mendukung.
+   - Menawarkan peluang pengembangan karir dan pelatihan yang jelas dan berkelanjutan bagi karyawan.
+   - Memberikan kenaikan gaji yang kompetitif dan kebijakan insentif lainnya untuk meningkatkan motivasi dan loyalitas karyawan.
+   - Mengurangi beban kerja yang berlebihan dan mengelola waktu kerja yang seimbang untuk mengurangi lembur dan kelelahan karyawan.
+
+2. **Best Practice dalam Manajemen Sumber Daya Manusia:**
+   - Melakukan survei dan analisis secara berkala terhadap kepuasan karyawan untuk mengidentifikasi masalah dan peluang perbaikan.
+   - Menerapkan program-program kesejahteraan karyawan yang holistik, termasuk fleksibilitas kerja, dukungan kesehatan mental, dan program keseimbangan kehidupan kerja.
+   - Membangun komunikasi yang terbuka dan transparan antara manajemen dan karyawan untuk meningkatkan keterlibatan dan kepercayaan.
+   - Mendorong kolaborasi dan pertumbuhan profesional melalui pengembangan tim dan program mentorship.
+
+Dengan memperhatikan faktor-faktor tersebut dan menerapkan strategi yang sesuai, Jaya Jaya Maju dapat mengurangi tingkat pergantian karyawan dan meningkatkan produktivitas, efisiensi operasional, serta stabilitas bisnisnya di masa depan.
