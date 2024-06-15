@@ -67,7 +67,7 @@ Dengan langkah-langkah di atas, Anda telah siap untuk memulai proyek dengan ling
 ```
 HR-Attrition-Analytics
 ├───data
-│       data.csv
+│       data_2.csv
 │       df_final.csv
 │
 ├───image
