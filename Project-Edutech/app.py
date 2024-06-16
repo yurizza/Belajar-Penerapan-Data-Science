@@ -32,7 +32,7 @@ for item in files_and_folders:
         display_files_and_folders(item_path)
     
 # Memuat model dan scaler
-model = load('model/best_trained_model.pkl')
+model = load('/mount/src/belajar-penerapan-data-science/Project-Edutech/model/best_trained_model.pkl')
 standard_scaler = load('model/best_standard_scaler.pkl')
 
 # Judul aplikasi
