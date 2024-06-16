@@ -129,4 +129,4 @@ elif menu == 'Show Summary Image':
         st.write(model_params)
 
     # Menampilkan gambar feature importances
-    st.image('image/feature_importances.png', caption='Feature Importances')
+    st.image('/mount/src/belajar-penerapan-data-science/Project-Edutech/image/feature_importances.png', caption='Feature Importances')
