@@ -4,6 +4,19 @@ from joblib import load
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 
+import os
+
+st.write(f"Current directory: {os.getcwd()}")
+
+model_path = 'model/best_trained_model.pkl'
+full_model_path = os.path.join(os.getcwd(), model_path)
+st.write(f"Full model path: {full_model_path}")
+
+if os.path.exists(full_model_path):
+    st.success("Model file exists.")
+else:
+    st.error("Model file does not exist.")
+    
 # Memuat model dan scaler
 model = load('model/best_trained_model.pkl')
 standard_scaler = load('model/best_standard_scaler.pkl')
