@@ -125,6 +125,11 @@ Untuk mempersiapkan Notebook dan melanjutkan langkah-langkah yang Anda sebutkan,
      ```bash
      streamlit run app.py
      ```
+2. Deploy Aplikasi Streamlit
+
+   Aplikasi Streamlit telah di-deploy dan dapat diakses melalui tautan berikut:
+   
+   [Dropout Analytics Streamlit App](https://projectdropoutanalytics.streamlit.app)
 
 ## Pembuatan Dasbor
 
@@ -192,12 +197,12 @@ Dengan menggunakan dashboard ini, Jaya Jaya Institut dapat memantau dan menganal
 #### Faktor Utama yang Mempengaruhi Dropout Siswa:
 
 Berdasarkan analisis data, faktor-faktor utama yang mempengaruhi tingkat dropout siswa di Jaya Jaya Institut meliputi:
-- Status sebagai penerima beasiswa (Scholarship Holder)
-- Gender siswa
-- Unit kurikuler yang diambil pada semester pertama (Curricular Units 1st Enrolled)
-- Kemajuan akademis pada semester pertama (Curricular Units 1st Sem Credited)
-- Unit kurikuler yang diambil pada semester kedua (Curricular Units 2nd Enrolled)
-- Nilai kualifikasi sebelumnya (Previous Qualification Grade)
+- Status Penerima Beasiswa (Scholarship Holder): Siswa yang tidak menerima beasiswa cenderung lebih sering mengalami dropout daripada mereka yang menerima.
+- Gender Siswa: Meskipun tidak ada perbedaan signifikan dalam jumlahnya, namun secara persentase, siswa laki-laki lebih cenderung untuk dropout.
+- Unit Kurikuler yang Diambil pada Semester Pertama (Curricular Units 1st Enrolled): Tingkat dropout paling tinggi terjadi pada siswa yang mengambil 6 unit, sementara untuk 5 unit, jumlah dropout lebih tinggi dibandingkan siswa yang lulus. Siswa yang mengambil 1-4 unit semuanya cenderung dropout.
+- Kemajuan Akademis pada Semester Pertama (Curricular Units 1st Sem Credited): Siswa yang hanya menyelesaikan 1-4 unit cenderung mengalami dropout daripada lulus.
+- Unit Kurikuler yang Diambil pada Semester Kedua (Curricular Units 2nd Enrolled): Pola dropout pada semester kedua mirip dengan yang pada semester pertama.
+- Nilai Kualifikasi Sebelumnya (Previous Qualification Grade): Siswa dengan nilai 133.1 dan 120 memiliki tingkat dropout yang lebih tinggi dibandingkan dengan yang lulus.
 
 #### Model Prediksi dan Akurasi:
 
@@ -209,14 +214,35 @@ Dashboard bisnis telah dirancang untuk memberikan visibilitas terhadap faktor-fa
 
 ### Rekomendasi Tindakan
 
-- **Penguatan Dukungan Akademik:** Menyediakan program pembinaan dan mentoring untuk siswa penerima beasiswa dan siswa dengan kemajuan akademis yang menurun.
-  
-- **Pemantauan Kemajuan Akademis:** Implementasikan sistem pemantauan kemajuan akademis secara teratur untuk mengidentifikasi siswa yang memerlukan intervensi lebih lanjut.
-  
-- **Perbaikan Kurikulum dan Pembelajaran:** Evaluasi dan diversifikasi kurikulum untuk memastikan relevansi dan keterlibatan siswa, terutama pada mata pelajaran awal yang mempengaruhi keputusan awal siswa untuk melanjutkan pendidikan.
-  
-- **Kolaborasi dengan Orang Tua dan Stakeholder:** Melibatkan orang tua dan stakeholder dalam mendukung pendidikan siswa dan mendapatkan wawasan tentang faktor-faktor yang mempengaruhi keberhasilan siswa.
-  
-- **Pengembangan Program Keseimbangan Kehidupan:** Menyediakan program kesejahteraan siswa yang mendukung kesehatan mental dan emosional mereka, serta membantu dalam menjaga keseimbangan antara kehidupan akademis dan non-akademis.
+Untuk mengurangi tingkat dropout siswa di Jaya Jaya Institut, berikut adalah beberapa action items yang dapat dipertimbangkan:
 
-Dengan mengimplementasikan rekomendasi ini, diharapkan Jaya Jaya Institut dapat mengurangi tingkat dropout siswa dan meningkatkan kesuksesan serta keberlanjutan pendidikan siswa mereka.
+1. **Program Beasiswa dan Dukungan Keuangan:**
+   - **Implementasikan Program Beasiswa:** Perlu ditingkatkan atau diperluas untuk memberikan bantuan keuangan kepada lebih banyak siswa, terutama yang berpotensi untuk mengalami kesulitan finansial.
+   - **Evaluasi Kebijakan Beasiswa:** Tinjau kembali kriteria penerimaan beasiswa dan pastikan mereka yang membutuhkan mendapatkan prioritas.
+
+2. **Dukungan Akademik dan Konseling:**
+   - **Penyediaan Tutor atau Mentor:** Sediakan bantuan akademik tambahan dalam bentuk tutor atau mentor bagi siswa yang mengalami kesulitan belajar.
+   - **Konseling Akademik dan Karier:** Tawarkan layanan konseling yang memadai untuk membantu siswa dalam mengatasi tantangan akademik dan perencanaan karier.
+
+3. **Pengembangan Kurikulum dan Program Belajar:**
+   - **Penyusunan Ulang Kurikulum:** Evaluasi dan perbarui kurikulum untuk memastikan relevansi dan daya tarik bagi siswa, serta mempertimbangkan beban akademik yang sesuai.
+   - **Penawaran Program Tambahan:** Sediakan pilihan kursus atau program yang lebih bervariasi untuk memenuhi minat dan kebutuhan siswa.
+
+4. **Monitoring dan Evaluasi Berkelanjutan:**
+   - **Pemantauan Perkembangan Akademik:** Implementasikan sistem pemantauan yang efektif untuk mengidentifikasi siswa yang berisiko tinggi dropout sejak dini.
+   - **Evaluasi Program dan Intervensi:** Lakukan evaluasi rutin terhadap efektivitas program-program yang diimplementasikan dan siapkan strategi intervensi yang responsif.
+
+5. **Kolaborasi dengan Orang Tua dan Komunitas:**
+   - **Engagement dengan Orang Tua:** Libatkan orang tua secara aktif dalam mendukung perjalanan akademik anak-anak mereka dan memberikan dukungan emosional.
+   - **Kemitraan dengan Komunitas:** Bangun kemitraan dengan lembaga atau organisasi di komunitas untuk memberikan dukungan tambahan kepada siswa.
+
+6. **Peningkatan Infrastruktur dan Fasilitas:**
+   - **Akses ke Teknologi dan Sumber Daya:** Pastikan akses yang memadai terhadap teknologi dan fasilitas belajar lainnya untuk mendukung proses pembelajaran yang efektif.
+
+7. **Program Orientasi dan Integrasi Sosial:**
+   - **Orientasi Mahasiswa Baru yang Komprehensif:** Sediakan program orientasi yang menyeluruh untuk membantu siswa baru beradaptasi dengan lingkungan akademik dan sosial.
+
+8. **Pengembangan Keterampilan Hidup dan Soft Skills:**
+   - **Pelatihan Soft Skills:** Integrasi pelatihan keterampilan hidup dan soft skills dalam kurikulum untuk membantu siswa dalam mengembangkan kemampuan adaptasi dan penyelesaian masalah.
+
+Setiap action items di atas dapat membantu mengurangi dropout rate dengan memberikan dukungan yang komprehensif kepada siswa dan memperkuat lingkungan akademik yang inklusif dan responsif.
