@@ -3,34 +3,10 @@ import pandas as pd
 from joblib import load
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
-import os
 
-# Fungsi untuk memuat file dengan pemeriksaan keberadaan file
-def load_file(file_path):
-    if not os.path.exists(file_path):
-        st.error(f"File not found: {file_path}")
-        return None
-    else:
-        st.success(f"File found: {file_path}")
-        try:
-            return load(file_path)
-        except Exception as e:
-            st.error(f"Error loading file {file_path}: {e}")
-            return None
-            
-# Mendapatkan direktori saat ini
-current_dir = os.path.dirname(__file__)
-
-# Jalur ke model dan scaler
-model_path = os.path.join(current_dir, 'model/best_trained_model.pkl')
-scaler_path = os.path.join(current_dir, 'model/best_standard_scaler.pkl')
-
-# Muat model dan scaler
-model = load_file(model_path)
-standard_scaler = load_file(scaler_path)
 # Memuat model dan scaler
-# model = load('model/best_trained_model.pkl')
-# standard_scaler = load('model/best_standard_scaler.pkl')
+model = load('model/best_trained_model.pkl')
+standard_scaler = load('model/best_standard_scaler.pkl')
 
 # Judul aplikasi
 st.title("Prediksi Status Mahasiswa")
