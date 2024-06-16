@@ -3,37 +3,10 @@ import pandas as pd
 from joblib import load
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
-
-import os
-
-# Fungsi rekursif untuk menampilkan seluruh folder dan file
-def display_files_and_folders(folder_path):
-    st.write(f"Listing contents of: {folder_path}")
-    for item in os.listdir(folder_path):
-        item_path = os.path.join(folder_path, item)
-        if os.path.isdir(item_path):
-            display_files_and_folders(item_path)  # Rekursif untuk folder
-        else:
-            st.write(item_path)  # Menampilkan file
-
-# Mendapatkan direktori saat ini
-current_dir = os.path.dirname(__file__)
-st.write(f"Current directory: {current_dir}")
-
-# Menampilkan semua folder dan file di direktori saat ini
-files_and_folders = os.listdir(current_dir)
-st.write("Files and folders in the current directory:")
-for item in files_and_folders:
-    st.write(item)
-
-    # Jika item adalah folder, tampilkan isi folder
-    item_path = os.path.join(current_dir, item)
-    if os.path.isdir(item_path):
-        display_files_and_folders(item_path)
     
 # Memuat model dan scaler
 model = load('/mount/src/belajar-penerapan-data-science/Project-Edutech/model/best_trained_model.pkl')
-standard_scaler = load('model/best_standard_scaler.pkl')
+standard_scaler = load('/mount/src/belajar-penerapan-data-science/Project-Edutech/model/best_standard_scaler.pkl')
 
 # Judul aplikasi
 st.title("Prediksi Status Mahasiswa")
