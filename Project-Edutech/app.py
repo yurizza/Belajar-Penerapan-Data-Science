@@ -3,6 +3,7 @@ import pandas as pd
 from joblib import load
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
+import os
 
 # Mendapatkan direktori saat ini
 current_dir = os.path.dirname(__file__)
