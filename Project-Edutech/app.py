@@ -6,16 +6,30 @@ from sklearn.pipeline import Pipeline
 
 import os
 
-st.write(f"Current directory: {os.getcwd()}")
+# Fungsi rekursif untuk menampilkan seluruh folder dan file
+def display_files_and_folders(folder_path):
+    st.write(f"Listing contents of: {folder_path}")
+    for item in os.listdir(folder_path):
+        item_path = os.path.join(folder_path, item)
+        if os.path.isdir(item_path):
+            display_files_and_folders(item_path)  # Rekursif untuk folder
+        else:
+            st.write(item_path)  # Menampilkan file
 
-model_path = 'model/best_trained_model.pkl'
-full_model_path = os.path.join(os.getcwd(), model_path)
-st.write(f"Full model path: {full_model_path}")
+# Mendapatkan direktori saat ini
+current_dir = os.path.dirname(__file__)
+st.write(f"Current directory: {current_dir}")
 
-if os.path.exists(full_model_path):
-    st.success("Model file exists.")
-else:
-    st.error("Model file does not exist.")
+# Menampilkan semua folder dan file di direktori saat ini
+files_and_folders = os.listdir(current_dir)
+st.write("Files and folders in the current directory:")
+for item in files_and_folders:
+    st.write(item)
+
+    # Jika item adalah folder, tampilkan isi folder
+    item_path = os.path.join(current_dir, item)
+    if os.path.isdir(item_path):
+        display_files_and_folders(item_path)
     
 # Memuat model dan scaler
 model = load('model/best_trained_model.pkl')
