@@ -8,6 +8,11 @@ import os
 # Mendapatkan direktori saat ini
 current_dir = os.path.dirname(__file__)
 st.write(current_dir)
+# Menampilkan semua folder dan file di direktori saat ini
+files_and_folders = os.listdir(current_dir)
+st.write("Files and folders in the current directory:")
+for item in files_and_folders:
+    st.write(item)
 # Memuat model dan scaler
 model = load('model/best_trained_model.pkl')
 standard_scaler = load('model/best_standard_scaler.pkl')
