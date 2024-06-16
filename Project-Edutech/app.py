@@ -4,6 +4,9 @@ from joblib import load
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 
+# Mendapatkan direktori saat ini
+current_dir = os.path.dirname(__file__)
+st.write(current_dir)
 # Memuat model dan scaler
 model = load('model/best_trained_model.pkl')
 standard_scaler = load('model/best_standard_scaler.pkl')
