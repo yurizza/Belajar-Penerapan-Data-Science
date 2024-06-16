@@ -7,15 +7,17 @@ import os
 
 # Mendapatkan direktori saat ini
 current_dir = os.path.dirname(__file__)
-st.write(current_dir)
-# Menampilkan semua folder dan file di direktori saat ini
-files_and_folders = os.listdir(current_dir)
-st.write("Files and folders in the current directory:")
-for item in files_and_folders:
-    st.write(item)
+
+# Jalur ke model dan scaler
+model_path = os.path.join(current_dir, 'model/best_trained_model.pkl')
+scaler_path = os.path.join(current_dir, 'model/best_standard_scaler.pkl')
+
+# Muat model dan scaler
+model = load_file(model_path)
+standard_scaler = load_file(scaler_path)
 # Memuat model dan scaler
-model = load('model/best_trained_model.pkl')
-standard_scaler = load('model/best_standard_scaler.pkl')
+# model = load('model/best_trained_model.pkl')
+# standard_scaler = load('model/best_standard_scaler.pkl')
 
 # Judul aplikasi
 st.title("Prediksi Status Mahasiswa")
